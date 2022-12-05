@@ -44,6 +44,7 @@ def three_elves():
 
         calories_list.sort(reverse=True)
         total_calories = sum(calories_list[:3])
+            
 
     print(
         f"Total calories brought by the top three elves was: {total_calories}!")
