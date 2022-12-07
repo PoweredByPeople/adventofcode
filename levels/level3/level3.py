@@ -45,7 +45,7 @@ def sum_badege_priorties(filename):
     lowercase_dict = dict(zip(string.ascii_lowercase, range(1, 27)))
     uppercase_dict = dict(zip(string.ascii_uppercase, range(27, 53)))
 
-    with open(filename) as input:
+    with open(filename, encoding="utf8") as input:
         input = input.read().splitlines()
         i, j = 0, 3
 
@@ -68,11 +68,10 @@ def sum_badege_priorties(filename):
                 #print(priority)
                 total += priority
 
-        
             i += 3
             j += 3
 
     print(f"The sum of the priorities is {total}.")
 
-#sum_priorties("levels/level3/level3data.txt")
+sum_priorties("levels/level3/level3data.txt")
 sum_badege_priorties("levels/level3/level3data.txt")
