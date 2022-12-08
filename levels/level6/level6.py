@@ -5,7 +5,7 @@ Day 6!
 def start_of_packet(filename):
     with open(filename, encoding="utf-8") as datastream_buffer:
         data = datastream_buffer.read()
-        l, r = 0, 4
+        l, r = 0, 14
 
         while r < len(data):
             chars = data[l:r]
