@@ -79,6 +79,6 @@ def solve(puzzle_input: str) -> tuple[int, int]:
 if __name__ == "__main__":
     for filepath in sys.argv[1:]:
         print(f"{filepath}:")
-        input_data = pathlib.Path(filepath).read_text(encoding="utf-8").strip()
+        input_data = pathlib.Path(filepath).read(encoding="utf-8").strip()
         solutions = solve(input_data)
         print('\n'.join(str(solution) for solution in solutions))

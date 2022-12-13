@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["levels/level7/level7data.txt"]
+            "args": ["levels/level8/level8data.txt"]
         }
     ]
 }
